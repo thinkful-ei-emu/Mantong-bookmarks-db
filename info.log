@@ -18,3 +18,5 @@
 {"message":"Content is required","level":"error"}
 {"message":"Bookmark with id 5cf3133e-91cd-4069-8ee2-dd07bf7b62e6 created","level":"info"}
 {"message":"Rating is a number from 1 to 5","level":"error"}
+{"message":"Rating is a number from 1 to 5","level":"error"}
+{"message":"Rating is a number from 1 to 5","level":"error"}
