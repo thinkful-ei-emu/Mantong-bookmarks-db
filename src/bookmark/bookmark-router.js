@@ -13,7 +13,7 @@ bookmarkRouter
     res.json(bookmarks);
   })
   .post(bodyParser, (req, res) => {
-    const { title, url, description, rating } = req.body;
+    const { title, url, description, rate } = req.body;
     if (!title) {
       logger.error('Title is required');
       return res
@@ -35,7 +35,7 @@ bookmarkRouter
         .send('Invalid data');
     }
 
-    if (!Number.isInteger(rating) || rating < 0 || rating > 5) {
+    if (!Number.isInteger(rate) || rate < 0 || rate > 5) {
       logger.error('Rating is a number from 1 to 5');
       return res
         .status(400)
@@ -48,7 +48,7 @@ bookmarkRouter
       title,
       url,
       description,
-      rating
+      rate
 
     };
   
