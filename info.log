@@ -20,3 +20,4 @@
 {"message":"Rating is a number from 1 to 5","level":"error"}
 {"message":"Rating is a number from 1 to 5","level":"error"}
 {"message":"Rating is a number from 1 to 5","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
