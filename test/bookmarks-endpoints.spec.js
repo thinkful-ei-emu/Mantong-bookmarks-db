@@ -48,9 +48,9 @@ describe('Bookmarks Endpoints', function() {
   describe('GET /bookmarks/:bookmark_id', () => {
     context('Given no bookmarks', () => {
       it('responds with 404', () => {
-        const bookmarkId = 123456;
+        const bookmark_id = 123456;
         return supertest(app)
-          .get(`/bookmarks/${bookmarkId}`)
+          .get(`/bookmarks/${bookmark_id}`)
           .expect(404, { error: { message: 'Bookmark doesn\'t exist' } });
       });
     });
@@ -65,10 +65,10 @@ describe('Bookmarks Endpoints', function() {
       });
 
       it('responds with 200 and the specified bookmark', () => {
-        const bookmarkId = 2;
-        const expectedBookmark = testBookmarks[bookmarkId - 1];
+        const bookmark_id = 2;
+        const expectedBookmark = testBookmarks[bookmark_id - 1];
         return supertest(app)
-          .get(`/bookmarks/${bookmarkId}`)
+          .get(`/bookmarks/${bookmark_id}`)
           .expect(200, expectedBookmark);
       });
     });
